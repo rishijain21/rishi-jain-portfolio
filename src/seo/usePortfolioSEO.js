@@ -17,19 +17,19 @@ export const usePortfolioSEO = () => {
         setMeta("og:title", "Rishi Jain — Technology Partner for Founders & Growing Businesses", true);
         setMeta("og:description", "I build the systems your business actually runs on — backed by production fintech work and my own SaaS company.", true);
         setMeta("og:type", "website", true);
-        setMeta("og:url", "https://rishijain.dev", true);
-        // TODO (P0.2): Create og-preview.png (1200×630px) and deploy to https://rishijain.dev/og-preview.png
+        setMeta("og:url", "https://rishi-jain.vercel.app", true);
+        // TODO (P0.2): Create og-preview.png (1200×630px) and deploy to https://rishi-jain.vercel.app/og-preview.png
         // before launch. The tag is intentionally omitted until the asset is confirmed live to avoid
         // broken social card previews. Uncomment both lines below once deployed:
-        // setMeta("og:image", "https://rishijain.dev/og-preview.png", true);
-        // setMeta("twitter:image", "https://rishijain.dev/og-preview.png");
+        // setMeta("og:image", "https://rishi-jain.vercel.app/og-preview.png", true);
+        // setMeta("twitter:image", "https://rishi-jain.vercel.app/og-preview.png");
         setMeta("twitter:card", "summary_large_image");
         setMeta("twitter:title", "Rishi Jain — Technology Partner for Founders & Growing Businesses");
         setMeta("twitter:description", "I build the systems your business actually runs on — backed by production fintech work and my own SaaS company.");
 
         let canon = document.querySelector('link[rel="canonical"]');
         if (!canon) { canon = document.createElement("link"); canon.setAttribute("rel", "canonical"); document.head.appendChild(canon); }
-        canon.setAttribute("href", "https://rishijain.dev");
+        canon.setAttribute("href", "https://rishi-jain.vercel.app");
 
         let schemaTag = document.querySelector('script[data-schema="rj-person"]');
         if (!schemaTag) {
@@ -43,7 +43,8 @@ export const usePortfolioSEO = () => {
             "@type": "Person",
             name: "Rishi Jain",
             jobTitle: "Technology Partner",
-            url: "https://rishijain.dev",
+            email: "jainnrishii21@gmail.com",
+            url: "https://rishi-jain.vercel.app",
             sameAs: ["https://www.linkedin.com/in/rishi-jainn/", "https://github.com/rishijain21"],
             knowsAbout: [".NET", "Angular", "PostgreSQL", "SaaS architecture", "business automation"],
         });

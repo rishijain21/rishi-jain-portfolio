@@ -25,7 +25,7 @@ export const Footer = () => {
                             { label: "LinkedIn", href: "https://www.linkedin.com/in/rishi-jainn/" },
                             // P1.5 / P0.5 — GitHub link only shown when GITHUB_PROFILE_READY is true
                             GITHUB_PROFILE_READY ? { label: "GitHub", href: "https://github.com/rishijain21" } : null,
-                            { label: "Email", href: "mailto:hello@rishijain.dev" },
+                            { label: "Email", href: "mailto:jainnrishii21@gmail.com" },
                         ].filter(Boolean).map(l => {
                             const isExternal = l.href.startsWith("http");
                             return (

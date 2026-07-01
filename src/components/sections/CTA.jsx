@@ -146,14 +146,14 @@ export const CTA = () => {
                                     <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 12, color: "#857F79", textAlign: "center", marginTop: 10 }}>
                                         No automated reply. I read every message myself.
                                     </p>
-                                    {errors.submit && <span role="alert" aria-live="polite" style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, color: "#E5534B", marginTop: 4, display: "block", textAlign: "center" }}>Something didn't go through on my end. Email me directly at <a href="mailto:hello@rishijain.dev" style={{ color: "#E5534B" }}>hello@rishijain.dev</a>.</span>}
-                                    <a href="mailto:hello@rishijain.dev" style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, color: "#857F79", textDecoration: "none", display: "block", textAlign: "center", marginTop: 4, transition: "color 0.18s ease" }} onMouseEnter={e => e.currentTarget.style.color = "#6B6460"} onMouseLeave={e => e.currentTarget.style.color = "#857F79"}>or email hello@rishijain.dev directly</a>
+                                    {errors.submit && <span role="alert" aria-live="polite" style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, color: "#E5534B", marginTop: 4, display: "block", textAlign: "center" }}>Something didn't go through on my end. Email me directly at <a href="mailto:jainnrishii21@gmail.com" style={{ color: "#E5534B" }}>jainnrishii21@gmail.com</a>.</span>}
+                                    <a href="mailto:jainnrishii21@gmail.com" style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, color: "#857F79", textDecoration: "none", display: "block", textAlign: "center", marginTop: 4, transition: "color 0.18s ease" }} onMouseEnter={e => e.currentTarget.style.color = "#6B6460"} onMouseLeave={e => e.currentTarget.style.color = "#857F79"}>or email jainnrishii21@gmail.com directly</a>
                                 </div>
 
                                 <div style={{ borderTop: "1px solid rgba(26,22,18,0.08)", paddingTop: 24, marginTop: 4, textAlign: "center" }}>
                                     <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, color: "#857F79", marginBottom: 12 }}>Prefer to skip the form?</p>
                                     <div style={{ display: "flex", flexWrap: "wrap", gap: 16, justifyContent: "center", alignItems: "center" }}>
-                                        <a href="mailto:hello@rishijain.dev" style={{ fontFamily: "'Inter',sans-serif", fontSize: 14, fontWeight: 600, color: "#1B4FD8", textDecoration: "none", display: "inline-flex", alignItems: "center", gap: 6, borderBottom: "1px solid rgba(27,79,216,0.3)", paddingBottom: 2 }}>Email me directly →</a>
+                                        <a href="mailto:jainnrishii21@gmail.com" style={{ fontFamily: "'Inter',sans-serif", fontSize: 14, fontWeight: 600, color: "#1B4FD8", textDecoration: "none", display: "inline-flex", alignItems: "center", gap: 6, borderBottom: "1px solid rgba(27,79,216,0.3)", paddingBottom: 2 }}>Email me directly →</a>
                                         {/* WhatsApp CTA is only rendered when a real number is configured in SITE_CONFIG */}
                                         {SITE_CONFIG.whatsappNumber && (
                                             <a href={`https://wa.me/${SITE_CONFIG.whatsappNumber}?text=${encodeURIComponent("Hi Rishi, I found your portfolio and wanted to discuss a project.")}`} target="_blank" rel="noopener noreferrer"
