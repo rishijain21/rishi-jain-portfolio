@@ -96,9 +96,15 @@ export const Nav = () => {
                 }}>
                     {/* Logo — anchor back to top; SVG is decorative */}
                     <a href="#" aria-label="Rishi Jain — back to top" style={{ display: "flex", alignItems: "center", gap: 10, textDecoration: "none" }}>
-                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true" role="presentation">
-                            <rect width="36" height="36" rx="8" fill="#1A1612" />
-                            <path d="M11 10h7c2.2 0 4 1.8 4 4s-1.8 4-4 4h-7V10z M11 18l6 8" stroke="#F7F4EF" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" fill="none" />
+                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" aria-hidden="true" role="presentation" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="34" height="34" rx="7" fill="#1A1612" />
+                            {/* R — stem + bowl + leg */}
+                            <path d="M9 9.5v15" stroke="#F7F4EF" strokeWidth="2" strokeLinecap="round" />
+                            <path d="M9 9.5h5.5a3.5 3.5 0 0 1 0 7H9" stroke="#F7F4EF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                            <path d="M13.5 16.5L18 24.5" stroke="#F7F4EF" strokeWidth="2" strokeLinecap="round" />
+                            {/* J — top serif, vertical stem, bottom curve */}
+                            <path d="M22 9.5h4" stroke="#F7F4EF" strokeWidth="2" strokeLinecap="round" />
+                            <path d="M24 9.5v12a3 3 0 0 1-3 3" stroke="#F7F4EF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
                         <span style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 15, color: "#1A1612", letterSpacing: "-.02em" }}>Rishi Jain</span>
                     </a>
