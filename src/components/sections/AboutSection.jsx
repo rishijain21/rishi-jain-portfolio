@@ -6,7 +6,7 @@ const CURRENT_STATUS_ITEMS = [
     { dot: "#1A1612", text: "Specialist Programmer · Infosys (fintech)" },
     { dot: "#1A1612", text: "Founder & sole engineer · Sovva" },
     { dot: "rgba(26,22,18,0.35)", text: "Taking 1 freelance project at a time" },
-    { dot: "rgba(26,22,18,0.25)", text: "Sholapur, Maharashtra · responds within 4 hours, weekdays" },
+    { dot: "rgba(26,22,18,0.25)", text: "Pune, Maharashtra · responds within 4 hours, weekdays" },
 ];
 
 export const AboutSection = () => {

@@ -526,7 +526,7 @@ const AboutSection = () => {
                                     { dot: "#1A1612", text: "Specialist Programmer · Infosys (fintech)" },
                                     { dot: "#1A1612", text: "Founder & sole engineer · Sovva" },
                                     { dot: "rgba(26,22,18,0.35)", text: "Taking 1 freelance project at a time" },
-                                    { dot: "rgba(26,22,18,0.25)", text: "Sholapur, Maharashtra · responds within 4 hours, weekdays" },
+                                    { dot: "rgba(26,22,18,0.25)", text: "Pune, Maharashtra · responds within 4 hours, weekdays" },
                                 ].map((item, i) => (
                                     <div key={i} style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: i < 3 ? 10 : 0 }}>
                                         <div style={{ width: 6, height: 6, borderRadius: "50%", background: item.dot, flexShrink: 0 }} />
@@ -1427,7 +1427,7 @@ const Footer = () => {
                         <div>
                             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, color: "rgba(247,244,239,1)", marginBottom: 6, lineHeight: 1.6 }}>Every message is read personally. No assistants, no automated replies.</p>
                             <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, color: "rgba(247,244,239,0.58)" }}>© 2026 Rishi Jain · Technology Partner for founders and growing businesses</span>
-                            <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 12, color: "rgba(247,244,239,0.58)", marginTop: 4 }}>Sholapur, Maharashtra · India Standard Time</div>
+                            <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 12, color: "rgba(247,244,239,0.58)", marginTop: 4 }}>Pune, Maharashtra · India Standard Time</div>
                         </div>
                     </div>
                     <div style={{ display: "flex", gap: isMobile ? 8 : 28, flexWrap: "wrap", justifyContent: "center" }}>

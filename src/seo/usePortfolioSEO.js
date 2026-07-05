@@ -50,7 +50,7 @@ export const usePortfolioSEO = () => {
                     "email": "mailto:jainnrishii21@gmail.com",
                     "address": {
                         "@type": "PostalAddress",
-                        "addressLocality": "Sholapur",
+                        "addressLocality": "Pune",
                         "addressRegion": "Maharashtra",
                         "addressCountry": "IN"
                     },

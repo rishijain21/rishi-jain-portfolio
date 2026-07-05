@@ -1,7 +1,7 @@
 import { SITE_CONFIG } from "../config/site";
 
 export const FAQ_ITEMS = [
-    { q: "Who is Rishi Jain?", a: "Rishi Jain is a Technology Partner and software engineer based in Sholapur, Maharashtra, India. He specializes in building production-grade internal systems, SaaS platforms, and business automation for founders and small businesses. He has 6+ years of experience, including production fintech work at Infosys and running Sovva, his own SaaS company." },
+    { q: "Who is Rishi Jain?", a: "Rishi Jain is a Technology Partner and software engineer based in Pune, Maharashtra, India. He specializes in building production-grade internal systems, SaaS platforms, and business automation for founders and small businesses. He has 6+ years of experience, including production fintech work at Infosys and running Sovva, his own SaaS company." },
     { q: "What does Rishi Jain build?", a: "Rishi Jain builds the systems businesses actually run on — subscription and billing platforms, internal tools, B2B websites, automated workflows, and custom software. He has built Sovva (a full SaaS operations platform), B2B industrial portals, corporate websites, and healthcare booking systems." },
     { q: "What tech stack does Rishi Jain use?", a: "Rishi Jain's primary stack is .NET 8, Angular, PostgreSQL, Entity Framework Core, Hangfire, Stripe, and Azure for enterprise systems. For web projects and client sites, he uses React, HTML5, CSS3, WordPress, and custom JavaScript. He has deep fintech experience from Infosys." },
     { q: "How much does this cost?", a: `It depends on scope, but ${SITE_CONFIG.priceRangeText} I'll give you a specific number after we talk, not before.` },
