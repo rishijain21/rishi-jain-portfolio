@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { FAQ_ITEMS } from "../data/faqItems";
 
 export const usePortfolioSEO = () => {
     useEffect(() => {
@@ -18,11 +19,8 @@ export const usePortfolioSEO = () => {
         setMeta("og:description", "I build the systems your business actually runs on — backed by production fintech work and my own SaaS company.", true);
         setMeta("og:type", "website", true);
         setMeta("og:url", "https://rishi-jain.vercel.app", true);
-        // TODO (P0.2): Create og-preview.png (1200×630px) and deploy to https://rishi-jain.vercel.app/og-preview.png
-        // before launch. The tag is intentionally omitted until the asset is confirmed live to avoid
-        // broken social card previews. Uncomment both lines below once deployed:
-        // setMeta("og:image", "https://rishi-jain.vercel.app/og-preview.png", true);
-        // setMeta("twitter:image", "https://rishi-jain.vercel.app/og-preview.png");
+        setMeta("og:image", "https://rishi-jain.vercel.app/og-preview.png", true);
+        setMeta("twitter:image", "https://rishi-jain.vercel.app/og-preview.png");
         setMeta("twitter:card", "summary_large_image");
         setMeta("twitter:title", "Rishi Jain — Technology Partner for Founders & Growing Businesses");
         setMeta("twitter:description", "I build the systems your business actually runs on — backed by production fintech work and my own SaaS company.");
@@ -38,16 +36,100 @@ export const usePortfolioSEO = () => {
             schemaTag.setAttribute("data-schema", "rj-person");
             document.head.appendChild(schemaTag);
         }
-        schemaTag.textContent = JSON.stringify({
+        
+        const schemaData = {
             "@context": "https://schema.org",
-            "@type": "Person",
-            name: "Rishi Jain",
-            jobTitle: "Technology Partner",
-            email: "jainnrishii21@gmail.com",
-            url: "https://rishi-jain.vercel.app",
-            sameAs: ["https://www.linkedin.com/in/rishi-jainn/", "https://github.com/rishijain21"],
-            knowsAbout: [".NET", "Angular", "PostgreSQL", "SaaS architecture", "business automation"],
-        });
+            "@graph": [
+                {
+                    "@type": "Person",
+                    "@id": "https://rishi-jain.vercel.app/#person",
+                    "name": "Rishi Jain",
+                    "jobTitle": "Technology Partner & Software Engineer",
+                    "description": "Rishi Jain is a Technology Partner for founders and small businesses, specializing in building production-grade internal systems, automated workflows, and high-conversion web applications.",
+                    "url": "https://rishi-jain.vercel.app",
+                    "email": "mailto:jainnrishii21@gmail.com",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "addressLocality": "Sholapur",
+                        "addressRegion": "Maharashtra",
+                        "addressCountry": "IN"
+                    },
+                    "knowsLanguage": ["English", "Hindi"],
+                    "sameAs": [
+                        "https://www.linkedin.com/in/rishi-jainn/",
+                        "https://github.com/rishijain21"
+                    ],
+                    "alumniOf": {
+                        "@type": "Organization",
+                        "name": "Infosys"
+                    },
+                    "worksFor": {
+                        "@type": "Organization",
+                        "@id": "https://sovva.io/#organization",
+                        "name": "Sovva"
+                    },
+                    "knowsAbout": [
+                        "Software Engineering", "System Architecture", "React", "Angular", ".NET", "PostgreSQL", "B2B SaaS", "Business Automation"
+                    ]
+                },
+                {
+                    "@type": "Organization",
+                    "@id": "https://sovva.io/#organization",
+                    "name": "Sovva",
+                    "url": "https://sovva.io",
+                    "founder": {
+                        "@id": "https://rishi-jain.vercel.app/#person"
+                    }
+                },
+                {
+                    "@type": "WebSite",
+                    "@id": "https://rishi-jain.vercel.app/#website",
+                    "url": "https://rishi-jain.vercel.app",
+                    "name": "Rishi Jain — Technology Partner",
+                    "publisher": {
+                        "@id": "https://rishi-jain.vercel.app/#person"
+                    }
+                },
+                {
+                    "@type": "FAQPage",
+                    "@id": "https://rishi-jain.vercel.app/#faq",
+                    "mainEntity": FAQ_ITEMS.map(item => ({
+                        "@type": "Question",
+                        "name": item.q,
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": item.a
+                        }
+                    }))
+                },
+                {
+                    "@type": "CreativeWork",
+                    "name": "Sovva Subscription Platform",
+                    "url": "https://sovva.io",
+                    "creator": { "@id": "https://rishi-jain.vercel.app/#person" }
+                },
+                {
+                    "@type": "CreativeWork",
+                    "name": "Mechanical Bazaar B2B Portal",
+                    "url": "https://mechanicalbazaar.in",
+                    "creator": { "@id": "https://rishi-jain.vercel.app/#person" }
+                },
+                {
+                    "@type": "CreativeWork",
+                    "name": "Parsec Power Engineers Website",
+                    "url": "https://parsecpower.in",
+                    "creator": { "@id": "https://rishi-jain.vercel.app/#person" }
+                },
+                {
+                    "@type": "CreativeWork",
+                    "name": "Smile Your Confidence Dental Platform",
+                    "url": "https://smileyourconfidence.in",
+                    "creator": { "@id": "https://rishi-jain.vercel.app/#person" }
+                }
+            ]
+        };
+        
+        schemaTag.textContent = JSON.stringify(schemaData);
 
         if (!document.querySelector('link[data-fonts="rj"]')) {
             const link = document.createElement("link");

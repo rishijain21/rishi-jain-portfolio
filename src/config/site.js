@@ -10,5 +10,5 @@ export const SITE_CONFIG = {
     whatsappNumber: "",
 };
 
-export const GITHUB_PROFILE_READY = false; // flip once github.com/rishijain21 has populated READMEs
+export const GITHUB_PROFILE_READY = true; // flip once github.com/rishijain21 has populated READMEs
 export const TESTIMONIALS_READY = false; // flip once 2+ real client testimonials are collected

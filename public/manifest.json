@@ -1,0 +1,21 @@
+{
+  "name": "Rishi Jain — Technology Partner",
+  "short_name": "Rishi Jain",
+  "description": "Technology Partner for founders and growing businesses. Building the systems your business actually runs on.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1A1612",
+  "theme_color": "#1A1612",
+  "icons": [
+    {
+      "src": "/favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
