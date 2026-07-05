@@ -1,50 +1,55 @@
-# Rishi Jain — Portfolio
+# Rishi Jain — Portfolio & Technology Partner
 
-This repository contains the source code for my professional portfolio website: [rishi-jain.vercel.app](https://rishi-jain.vercel.app).
+<div align="center">
+  <img src="public/og-preview.jpg" alt="Rishi Jain - Technology Partner for Founders" width="100%" />
+</div>
 
-## Architecture
+## 🌐 The Live Platform
 
-The site is built as a highly optimized React Single Page Application (SPA) using Vite.
+**Live Portfolio:** [rishi-jain.vercel.app](https://rishi-jain.vercel.app)
 
-- **Framework**: React 18
-- **Build Tool**: Vite
-- **Styling**: Vanilla CSS with localized styles, optimized for minimum rendering overhead
-- **Deployment**: Vercel
+This repository holds the source code for my personal portfolio and consulting platform. It is engineered not just as a brochure, but as a high-performance, SEO-optimized web application designed to rank and convert.
 
-## Performance & SEO Optimization
+---
 
-The portfolio is designed with rigorous attention to Web Vitals and SEO:
+## 🏗 Architecture & Engineering Choices
 
-1. **AI Visibility (Generative Engine Optimization)**: Uses `<noscript>` fallback tags and robust structured data to ensure maximum citation visibility by LLMs (ChatGPT, Claude, Perplexity).
-2. **Entity Consolidation**: Extensive JSON-LD schema graphs (Person, Organization, WebSite, WebPage, FAQPage, CreativeWork) provide a semantic web of relationships for search engines.
-3. **Core Web Vitals**:
-   - Zero layout shift (CLS = 0)
-   - Highly compressed WebP imagery for instantaneous LCP
-   - CSS-based smooth scrolling and interactions to minimize main thread blocking
-4. **Responsive Strategy**: Fluid typography (`clamp()`) and dynamic grids ensure seamless adaptation from ultra-wide desktops to small mobile devices.
+This platform was built with a relentless focus on **speed, Core Web Vitals, and Semantic SEO**.
 
-## Local Development
+### 1. Framework & Rendering
+- Built on **React + Vite** for lightning-fast HMR and minimal bundle sizes.
+- **Component-Driven Design:** Everything is modularized into pure UI components (`<Button>`, `<Card>`, `<Section>`) separating business data from presentation.
 
-```bash
-# Install dependencies
-npm install
+### 2. Pro-Level SEO & The "Invisible Layer"
+Most developer portfolios fail at distribution. This platform is built for visibility:
+- **Zero-JS Crawler Fallback:** A `<noscript>` block in the `index.html` feeds LLMs (ChatGPT/Claude/Gemini) and legacy crawlers the complete semantic profile of my skills without requiring them to execute JavaScript.
+- **WhatsApp/LinkedIn Optimization:** Open Graph (`og:`) and Twitter card tags are hardcoded statically in the HTML root, ensuring instant, rich-media previews when the link is shared on any messaging platform.
+- **AI-Targeted FAQ Schema:** The FAQ section is injected with specific questions LLMs and Google's "People Also Ask" system look for (e.g., *"What stack does Rishi Jain use?"*).
 
-# Start development server
-npm run dev
+### 3. Performance Enhancements
+- **Next-Gen Image Formats:** All heavy assets are served as highly compressed `.webp` files.
+- **Preconnected Fonts:** Google Fonts (`Playfair Display`, `Inter`) are preconnected at the DNS level in the HTML head to eliminate render-blocking.
+- **Progressive Web App (PWA) Ready:** Configured with a full Web App Manifest and favicon suite for mobile pinning.
 
-# Build for production
-npm run build
-```
+---
 
-## Structure
+## 💼 About Rishi Jain
 
-- `/src/components` - Reusable UI elements and layout primitives
-- `/src/data` - Extracted content (projects, FAQs, services) to keep components clean
-- `/src/seo` - Centralized JSON-LD graph generation and meta tag management
-- `/public` - Static assets, highly compressed WebP imagery, robots.txt, and sitemap.xml
+I am a Technology Partner and Software Engineer based in India. I specialize in taking complex business processes and turning them into scalable, automated software systems. 
 
-## Author
+My background bridges two worlds:
+1. **Enterprise FinTech (Infosys):** Where I learned the absolute necessity of rigorous testing, secure API architecture, and code that cannot afford to fail.
+2. **SaaS Founder (Sovva):** Where I learned that code doesn't matter if it doesn't solve a real business problem, drive revenue, or save time.
 
-**Rishi Jain**  
-Technology Partner & Software Engineer  
-[LinkedIn](https://www.linkedin.com/in/rishi-jainn/) | [rishi-jain.vercel.app](https://rishi-jain.vercel.app)
+### The Stack I Deploy
+* **Backend:** `.NET 8`, `C#`, `PostgreSQL`, `Entity Framework Core`, `Hangfire`
+* **Frontend:** `Angular`, `React`, `TypeScript`, `TailwindCSS`
+* **Cloud:** `Azure`, `Vercel`, `Docker`
+
+---
+
+### Contact & Collaboration
+If you are a founder, agency, or growing business looking to stop fighting your current software and start building systems that scale with you — let's talk.
+
+📧 [jainnrishii21@gmail.com](mailto:jainnrishii21@gmail.com)  
+🔗 [LinkedIn](https://www.linkedin.com/in/rishi-jainn/)
