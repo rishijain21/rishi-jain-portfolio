@@ -1127,7 +1127,7 @@ const CTA = () => {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          access_key: import.meta.env.VITE_WEB3FORMS_ACCESS_KEY,
+          access_key: "74311a31-382d-47ee-817f-b09ec8055c85",
           name: formState.name,
           email: formState.email,
           message: formState.message,
