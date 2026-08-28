@@ -1133,6 +1133,8 @@ const CTA = () => {
           message: formState.message,
           botcheck: formState.botcheck,
           subject: "New Discovery Call Request from Portfolio",
+          from_name: "Rishi Jain Portfolio",
+          replyto: formState.email,
         }),
       });
       
