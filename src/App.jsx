@@ -1175,16 +1175,16 @@ const CTA = () => {
                   <svg width="22" height="22" fill="none" stroke="#16A34A" strokeWidth="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" /></svg>
                 </div>
                 <div style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: "clamp(22px, 3vw, 30px)", fontWeight: 400, color: "#1A1612", letterSpacing: "-0.01em", lineHeight: 1.2 }}>
-                  Your message is on its way.
+                  Request Received.
                 </div>
                 <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, color: "#6B6460", lineHeight: 1.7, maxWidth: 360, margin: 0 }}>
-                  I'll read it carefully and respond within 4 hours — usually same day. Check your inbox (and spam, just in case).
+                  Thanks for sharing the details of your project. I personally review all inquiries to ensure a strong mutual fit, and I will be in touch within 24 hours to outline our next steps.
                 </p>
                 <button
                   onClick={() => { setSubmitted(false); setFormState({ name: "", email: "", message: "" }); }}
                   style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, color: "#B5AFA9", background: "none", border: "none", cursor: "pointer", marginTop: 8, textDecoration: "underline", textUnderlineOffset: 3 }}
                 >
-                  Send another message
+                  Submit another request
                 </button>
               </div>
             ) : (
